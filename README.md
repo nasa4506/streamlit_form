@@ -41,6 +41,7 @@ The app supports **persistent storage using browser LocalStorage**, so responses
 ## 📂 Project Structure  
 
 ├── app.py # Main Streamlit application
+
 ├── README.md # Project documentation
 
 ## ⚡ Installation & Setup  
