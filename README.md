@@ -52,10 +52,10 @@ The app supports **persistent storage using browser LocalStorage**, so responses
    cd social-media-selfesteem-study
 
 2. **Create virtual environment (recommended)**
-   
-  python -m venv venv
-  source venv/bin/activate   # Mac/Linux
-  venv\Scripts\activate      # Windows
+   ```bash
+    python -m venv venv
+    source venv/bin/activate   # Mac/Linux
+    venv\Scripts\activate      # Windows
 
 
 3. **Install dependencies**
