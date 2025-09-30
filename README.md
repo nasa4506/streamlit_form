@@ -1,91 +1,64 @@
-📊 Persistent Social Media & Self-Esteem Study
+# 📊 Persistent Social Media & Self-Esteem Study  
 
-This project is an interactive Streamlit web app designed to collect and analyze questionnaire responses about social media engagement and self-esteem.
+This project is an **interactive Streamlit web app** designed to collect and analyze questionnaire responses about **social media engagement** and **self-esteem**.  
 
-The app supports persistent storage using browser LocalStorage, so responses remain saved across sessions without requiring a backend database.
+The app supports **persistent storage using browser LocalStorage**, so responses remain saved across sessions without requiring a backend database.  
 
-🚀 Features
+---
 
-📋 Questionnaire Form
+## 🚀 Features  
 
-Collects demographic info (gender).
+- **📋 Questionnaire Form**
+  - Collects demographic info (gender).
+  - Measures **Social Media Engagement Questionnaire (SMEQ)** scores.
+  - Measures **Self-Esteem Scale (Rosenberg-based)** with reverse-scored items.
 
-Measures Social Media Engagement Questionnaire (SMEQ) scores.
+- **💾 Persistent Data Storage**
+  - Responses are stored in the browser’s **LocalStorage**.
+  - Entries are preserved even after page reloads or browser restarts.
 
-Measures Self-Esteem Scale (Rosenberg-based) with reverse-scored items.
+- **📈 Live Results Dashboard**
+  - Displays real-time metrics:  
+    - Total responses collected  
+    - Average SMEQ score  
+    - Average Self-Esteem score  
+  - Interactive data table with **row deletion** support.
 
-💾 Persistent Data Storage
+- **📥 Data Export**
+  - Download all responses as a **CSV file**.
 
-Responses are stored in the browser’s LocalStorage.
+---
 
-Entries are preserved even after page reloads or browser restarts.
+## 🛠️ Tech Stack  
 
-📈 Live Results Dashboard
+- [Streamlit](https://streamlit.io/) – Web framework  
+- [Pandas](https://pandas.pydata.org/) – Data handling  
+- [Altair](https://altair-viz.github.io/) – Visualization  
+- [streamlit-local-storage](https://pypi.org/project/streamlit-local-storage/) – Browser persistence  
 
-Displays real-time metrics:
+---
 
-Total responses collected
+## 📂 Project Structure  
 
-Average SMEQ score
+├── app.py # Main Streamlit application
+├── README.md # Project documentation
 
-Average Self-Esteem score
+## ⚡ Installation & Setup  
 
-Interactive data table with row deletion support.
+1. **Clone this repo**  
+   ```bash
+   git clone https://github.com/yourusername/social-media-selfesteem-study.git
+   cd social-media-selfesteem-study
 
-📥 Data Export
-
-Download all responses as a CSV file.
-
-🛠️ Tech Stack
-
-Streamlit
- – Web framework
-
-Pandas
- – Data handling
-
-Altair
- – Visualization
-
-streamlit-local-storage
- – Browser persistence
-
-📂 Project Structure
-.
-├── app.py         # Main Streamlit application
-├── README.md      # Project documentation
-
-⚡ Installation & Setup
-
-Clone this repo
-
-git clone https://github.com/yourusername/social-media-selfesteem-study.git
-cd social-media-selfesteem-study
+2. **Create virtual environment (recommended)**
+   
+  python -m venv venv
+  source venv/bin/activate   # Mac/Linux
+  venv\Scripts\activate      # Windows
 
 
-Create virtual environment (recommended)
-
-python -m venv venv
-source venv/bin/activate   # Mac/Linux
-venv\Scripts\activate      # Windows
-
-
-Install dependencies
-
-pip install -r requirements.txt
-
-
-Example requirements.txt:
-
-streamlit
-pandas
-altair
-streamlit-local-storage
-
-
-Run the app
-
-streamlit run app.py
+3. **Install dependencies**
+   pip install -r requirements.txt
 
 📊 Questionnaire Details
 
@@ -118,3 +91,8 @@ For multi-user or production scenarios, you should replace LocalStorage with a p
 📜 License
 
 This project is open-source under the MIT License.
+
+
+
+
+
